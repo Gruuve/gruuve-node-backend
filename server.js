@@ -20,7 +20,7 @@ app.get('/api/users', function(req, res) {
 
     search.then((data) => {
      //res.end(JSON.stringify(data));
-     res.send(JSON.stringify(data));
+     res.send(data);
 
     });
 
