@@ -16,7 +16,7 @@ app.get('/api/users', function(req, res) {
      
     const DuckDuckScrape = require("duck-duck-scrape");
     const ddg = new DuckDuckScrape();
-    let search = ddg.search(qu, 1, "en-us"); 
+    let search = ddg.search(qu, -1, "en-us"); 
 
     search.then((data) => {
      //res.end(JSON.stringify(data));
